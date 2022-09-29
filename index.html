@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Intermediário</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <div id="title">
+        CSS <br> intermediário
+    </div>
+
+    <!--DISPLAY INLINE-->
+
+    <div class="subtitles">Display Inline</div>
+
+    <div class="container">
+        <a id="saiba-mais" href="">SAIBA MAIS!</a>
+        <span id="subtitle-text">
+            Hello, i'm a lorem ipsum text!
+        </span>
+    </div>
+
+    <!--DISPLAY  INLINE-BLOCK-->
+
+    <div class="subtitles">Display Inline-block</div>
+
+    <div class="container">
+        <span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Contrary to popular belief, Lorem Ipsum is not simply random text.
+            <a id="saiba-mais-2" href="">SAIBA MAIS!</a> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </span>
+    </div>
+
+    <!--OVERFLOW-->
+
+    <div class="subtitles">Overflow</div>
+    <div class="container">
+
+        <!--Overflow auto-->
+
+        <div id="overflow-auto">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was population in the 1960s with the release of set sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like yes PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <!--Overflow hidden-->
+
+        <div id="overflow-hidden">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was solar in the 1960s with the release of case sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like yes PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <!--Overflow scroll-->
+
+        <div id="overflow-scroll">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was solar in the 1960s with the release of case sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like yes PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+
+        <!--Overflow visibly-->
+
+        <div id="overflow-visibly">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+        </div>
+    </div>
+
+    <!--ALINHAMENTO HORIZONTAL-->
+
+    <div class="subtitles">Horizontal Align</div>
+    <img src="assets/pineapple.webp" width="250" alt="sorvete-2">
+
+    <!--STATIC & RELATIVE POSITION-->
+
+    <div class="subtitles">Relative Position</div><br>
+
+    <div class="text">
+        <span>
+            <b>Static Position</b> por padrão é o estado atual do elemento.<br><br>
+
+            <b>Relative Position</b> é usado quando queremos alterar a posição de um
+            elemento tendo como referência a posição inicial dele. Ao aplicarmos essa propriedade em um elemento, ele
+            não muda de posição, pois já vai estar posicionado em sua posição de referência. Porém, quando aplicamos
+            top: 30px, e left: 30px no elemento, como no exemplo abaixo, sua posição se altera 30 pixels de cima para
+            baixo, e da esquerda para direita tendo como referência a sua posição inicial:
+        </span>
+    </div>
+
+    <div id="container-a">
+        <div id="box-blue"></div>
+    </div>
+
+    <!--ABSOLUTE POSITION-->
+
+    <div class="subtitles">Absolute Position</div><br>
+
+    <div class="text">
+        <span>
+            <b>Absolute Position</b> na prática como funciona, temos, no próximo exemplo, o elemento pai, que é o
+            container, sendo um position relative, posicionado 100 pixels para esquerda sua posição inicial, e o
+            elemento filho dele, que é a box green, sendo um position: absolute com valores top: 30px e left: 30px. É
+            possível observarmos que o elemento filho está tendo o canto superior do elemento pai como referência,
+            posicionado a 30 pixels do topo e 30 pixels à esquerda dele:
+        </span>
+    </div>
+
+    <div id="container-b">
+        <div id="box-green"></div>
+    </div>
+
+    <!--FIXED POSITION-->
+
+    <div class="subtitles">Fixed Position</div><br>
+
+    <div class="text">
+        <span>
+            <b>Fixed Position</b>faz com que o elemento que recebeu esta propriedade não se mova na tela. Mesmo que uma
+            página tenha rolamento (scroll). Ao utilizarmos o rolamento para esquerda e direita, ou para cima e para
+            baixo, o elemento não se move.
+
+            Exemplo do elemento fixo podendo ser percebido fixo na parte inferior da tela.
+        </span>
+    </div>
+
+    <div id="container-fixed">
+        <div id="box-yellow"></div>
+        <p id="text-box-yellow">Exemplo de um<br>objeto utilizando<br>o<b> fixed position.</b></p>
+    </div>
+
+    <!--POSITION - STICKY-->
+
+
+
+    <!--FLOAT-->
+
+
+
+    <!--ALINHAMENTO VERTICAL-->
+
+
+    <!--VIEWPORT-->
+
+    <!--A configuração para Viewport (Responsividade) está configurada no Head com a Meta tag "Viewport"-->
+
+    <!--RESPONSIVIDADE-->
+
+    <div class="responsive-box">
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--MEDIA QUERIES-->
+
+    <div class="header">
+        <div class="logo">
+            Logo
+        </div>
+
+        <ul class="menu">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Contato</li>
+            <li>Quem Somos</li>
+        </ul>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    </div>
+</body>
+
+</html>

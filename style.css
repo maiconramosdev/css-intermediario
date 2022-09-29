@@ -1,0 +1,334 @@
+* { /*Configurações globais das CSS*/
+    
+    /*RESET CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    background-attachment: fixed;
+
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 4%;
+    letter-spacing: -2px;
+    display: block;
+    line-height: 1.2;
+}
+
+.subtitles {
+    border: 3.6px solid #476ECC;
+    border-radius: 6px;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #476ECC;
+    padding: 10px;
+    margin-bottom: 4%;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*Padrão para todos os títulos*/
+    font-family: monospace;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+p {
+    font-family: monospace;
+    line-height: 2;
+    margin-bottom: 2%;
+}
+
+span {
+    font-family: monospace;
+    line-height: 2;
+}
+
+.container {
+    margin-bottom: 4%;
+}
+
+#subtitle-text {
+    margin-left: 20px;
+}
+
+/*DISPLAY INLINE*/
+
+#saiba-mais {
+    text-decoration: none;
+    padding: 10px 30px 10px 30px;
+    background-color: #476ECC;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: .5s;
+
+    display: inline;
+}
+
+#saiba-mais-2 {
+    text-decoration: none;
+    padding: 4px 30px 4px 30px;
+    background-color: #E8A5C0;
+    color: #fff;
+    font-size: 1.2em;
+    font-family: monospace;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: .5s;
+
+    display: inline-block;
+}
+
+#p-display-inline {
+    font-family: monospace;
+}
+
+/*DISPLAY INLINE-BLOCK*/
+
+.link-text {
+    text-decoration: none;
+    background-color: #FBA1A1;
+    padding: 10px 20px 10px 20px;
+    font-family: monospace;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 2px;
+    margin-bottom: 2%;
+
+    display: inline-block;
+}
+
+#p-display-inline-block {
+    font-family: monospace;
+}
+
+/*OVERFLOW*/
+
+.container {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 4%;
+}
+
+/*Overflow auto*/
+
+#overflow-auto {
+    background-color: #e4e6f0;
+    width: 250px;
+    height: 150px;
+    margin-top: 4%;
+    float: left;
+    margin-right: 50px;
+
+    overflow: auto;
+}
+
+/*Overflow hidden*/
+
+#overflow-hidden {
+    width: 250px;
+    height: 150px;
+    background-color: #e4e6f0;
+    margin-top: 4%;
+
+    overflow: hidden;
+}
+
+/*Overflow scroll*/
+
+#overflow-scroll {
+    width: 250px;
+    height: 150px;
+    background-color: #e4e6f0;
+    margin-top: 4%;
+    float: left;
+    margin-right: 50px;
+
+    overflow: scroll;
+}
+
+/*Overflow visibly*/
+
+#overflow-visibly {
+    width: 250px;
+    height: 150px;
+    background-color: #e4e6f0;
+    margin-top: 4%;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 4%;
+
+    overflow: visible;
+}
+
+/*HORIZONTAL ALIGN*/
+
+img {
+    border-radius: 10px;
+    margin: auto;
+    display: block; /*Para este elemento funcionar ele precisa do display block*/
+    margin-bottom: 4%;
+}
+
+/*POSITIONS*/
+
+.text {
+    margin-bottom: 2%;
+    width: 720px;
+    text-align: justify;
+}
+
+/*STATIC & RELATIVE POSITION*/
+
+#container-a {
+    width: 500px;
+    height: 400px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+#box-blue {
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #41b2f2;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+/*ABSOLUTE POSITION*/
+
+#container-b {
+    width: 500px;
+    height: 400px;
+    border: 1px solid #d4d4d4;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-bottom: 4%;
+
+    position: relative;
+}
+
+#box-green {
+
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: #2DCB6F;
+    border-radius: 10px;
+
+    position: absolute;
+}
+
+/*FIXED POSITION*/
+
+#container-fixed {
+    width: 280px;
+    height: 120px;
+    background-color: #e4e6f0;
+    bottom: 320px;
+    right: 40px;
+    border-radius: 10px;
+    position: fixed;
+    padding: 10px;
+}
+
+#box-yellow {
+    width: 100px;
+    height: 100px;
+    background-color: #FFCA28;
+    border-radius: 10px;
+    float: right;
+}
+
+#text-box-yellow {
+    font-family: monospace;
+    line-height: 1.3em;
+    text-align: right;
+    float: right;
+    margin: 18px;
+    margin-top: 40px;
+}
+
+/*RESPONSIVIDADE*/
+
+.responsive-box {
+    margin: auto;
+    width: 60%;
+    height: 100px;
+    background-color: #476ECC;
+
+    /*Esta é uma forma de trabalhar com responsividade, colocando o elemento em % relacionado ao elemento pai*/
+}
+
+/*MEDIA QUERIES*/
+
+.header {
+    overflow: hidden;
+    margin: auto;
+    width: 60%;
+    background-color: #476ECC;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    float: left;
+    font-family: monospace;
+    color: #e9e1ff;
+    margin-left: 15px;
+}
+
+.logo {
+    float: left;
+    font-family: monospace;
+    color: #e9e1ff;
+}
+
+@media screen and (max-width: 600px) { /*Possibilidade de alterar o comportamento do elemento quando o mesmo atinge 400px em telas menores*/
+    .logo {
+        float: none;
+        text-align: center;
+    }
+    .menu {
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+    }
+    li {
+        float: none;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+}
